@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Paytm Clone Web App" />
+    <meta name="keywords" content="Paytm, Clone, React, Web App" />
+    <meta name="author" content="Your Name" />
+    <meta property="og:title" content="Paytm Clone" />
+    <meta property="og:description" content="A clone of Paytm built with React" />
+    <meta property="og:image" content="%PUBLIC_URL%/logo192.png" />
+    <meta property="og:url" content="http://yourwebsite.com" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Paytm Clone</title>
+    <style>
+      body {
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        background-color: #f0f2f5;
+      }
+      .loading-spinner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <div class="loading-spinner">
+      <div class="spinner"></div>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        const root = document.getElementById('root');
+        const spinner = document.querySelector('.loading-spinner');
+        if (root) {
+          spinner.style.display = 'none';
+        }
+      });
+    </script>
+  </body>
+</html>
